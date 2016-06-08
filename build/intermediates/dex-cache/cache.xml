@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="b1b6ea3b7e4aa4f492509a4952029cd8e48019ad">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-2.4_db9d9c7f5dc9abc44c05f9a56b43532b2a4af315/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_61a9420c2c931051d362b67634049cb3b017026f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="713bdb2d1b970079e0901661d6d14eceb9b16e43">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5c96c401e1c5f6c280aa78555fb5de59fc1a74fa/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.4.0_59e8f5ba81280629b2077e1cd17275c26a6a2c69/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.4.0_985c2e43471a3de2b5a54828476ad17cf0f8dd3f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_bd7ca4ca6230c297e9adfb01b7d5971ffa23b86b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5596bedd0314c133f8f70892a44394c63a9c3e24">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c6fcad98e610e69739a381fa2a0cb0212bade400/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_39cfeb71d2cdf553fff6aabd62d970da6a10c79c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_f7f9d523cfacbc9fc1b39234e5ca38fa5b19a119/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_1ec2c66a09da3ec7d1c100362d5a5eee5474765f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="/Users/macbookpro/AndroidStudioProjects/TodoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.4.0_e421712694e9dd5e5b643fba39cfd81b001b1f68/classes.dex" />
+    </item>
+
+</items>
