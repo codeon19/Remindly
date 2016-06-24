@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="samuelbreck.remindly.MainActivity">
+
+    <item
+        android:title="delete"
+        android:id="@+id/action_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:right="20dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="save"
+        android:id="@+id/action_save"
+        android:icon="@drawable/ic_check_circle_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+</menu>
