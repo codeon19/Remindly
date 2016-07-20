@@ -9,23 +9,33 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 
-public class EditActivity extends AppCompatActivity {
+import java.util.Calendar;
+
+
+public class EditActivity extends AppCompatActivity implements
+        DatePickerDialog.OnDateSetListener {
 
 
     String primary_key;
 
     EditText taskNameEdit;
-    // missing the priority field
-    EditText taskDateEdit;
+    TextView taskDateEdit;
+
+    RadioButton low;
+    RadioButton medium;
+    RadioButton high;
+
     EditText taskNoteEdit;
 
     int pos;
 
+    String priority;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +48,13 @@ public class EditActivity extends AppCompatActivity {
         pos = getIntent().getIntExtra("pos", 0);
 
         taskNameEdit = (EditText) findViewById(R.id.taskNameEdit);
-        // missing the priority field
-        taskDateEdit = (EditText) findViewById(R.id.taskDateEdit);
+
+        taskDateEdit = (TextView) findViewById(R.id.taskDateEdit);
+
+        low = (RadioButton) findViewById(R.id.low);
+        medium = (RadioButton) findViewById(R.id.medium);
+        high = (RadioButton) findViewById(R.id.high);
+
         taskNoteEdit = (EditText) findViewById(R.id.taskNoteEdit);
 
         // if the form already exists
@@ -85,6 +100,22 @@ public class EditActivity extends AppCompatActivity {
         taskNameEdit.setText(primary_key);
         taskDateEdit.setText(getIntent().getStringExtra("taskDate"));
         // missing the priority field
+
+        priority = getIntent().getStringExtra("taskPriority");
+
+        switch(priority) {
+            case "low":
+                low.setChecked(true);
+                break;
+            case "medium":
+                medium.setChecked(true);
+                break;
+            case "high":
+                high.setChecked(true);
+                break;
+
+        }
+
         taskNoteEdit.setText(getIntent().getStringExtra("taskNote"));
 
     }
@@ -97,7 +128,7 @@ public class EditActivity extends AppCompatActivity {
 
         data.putExtra("taskName", taskNameEdit.getText().toString());
         data.putExtra("taskDate", taskDateEdit.getText().toString());
-        data.putExtra("taskPriority","N/A" );
+        data.putExtra("taskPriority",priority);
         data.putExtra("taskNote", taskNoteEdit.getText().toString());
 
         data.putExtra("pos", pos);
@@ -119,6 +150,45 @@ public class EditActivity extends AppCompatActivity {
 
         setResult(RESULT_CANCELED,data);
         finish();
+    }
+
+    public void onClickDate (View v) {
+        Calendar now = Calendar.getInstance();
+        DatePickerDialog dpd = DatePickerDialog.newInstance(
+                EditActivity.this,
+                now.get(Calendar.YEAR),
+                now.get(Calendar.MONTH),
+                now.get(Calendar.DAY_OF_MONTH)
+        );
+
+        dpd.show(getFragmentManager(), "Datepickerdialog");
+    }
+
+    @Override
+    public void onDateSet(DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
+        String date = (monthOfYear+1) + "/" + dayOfMonth + "/" + year;
+        taskDateEdit.setText(date);
+    }
+
+    public void onRadioButtonClicked(View v) {
+        // Is the button now checked?
+        boolean checked = ((RadioButton) v).isChecked();
+
+        // Check which radio button was clicked
+        switch(v.getId()) {
+            case R.id.low:
+                if (checked)
+                    priority = "low";
+                    break;
+            case R.id.medium:
+                if (checked)
+                    priority = "medium";
+                    break;
+            case R.id.high:
+                if (checked)
+                    priority = "high";
+                    break;
+        }
     }
 
 }

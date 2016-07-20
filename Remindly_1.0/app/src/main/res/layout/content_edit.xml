@@ -14,7 +14,7 @@
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:inputType="textMultiLine"
         android:textSize="20dp"
         android:ems="10"
@@ -66,37 +66,54 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="50dp" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Low"
-        android:id="@+id/radioButton"
-        android:checked="false"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Medium"
-        android:id="@+id/radioButton2"
-        android:checked="false"
-        android:layout_alignTop="@+id/radioButton"
-        android:layout_centerHorizontal="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low"
+                android:id="@+id/low"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:onClick="onRadioButtonClicked"
+                android:layout_gravity="left" />
 
-    <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="High"
-        android:id="@+id/radioButton3"
-        android:checked="false"
-        android:layout_alignTop="@+id/radioButton2"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:id="@+id/medium"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp" />
 
-    <EditText
-        android:layout_height="wrap_content"
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High"
+                android:id="@+id/high"
+                android:checked="false"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:onClick="onRadioButtonClicked" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_height="40dp"
         android:layout_width="wrap_content"
         android:inputType="date"
         android:ems="10"
@@ -111,28 +128,29 @@
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Set Date"
         android:id="@+id/datePicker"
-        android:layout_toRightOf="@+id/radioButton2"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/taskDateEdit"
-        android:layout_below="@+id/textView2" />
+        android:onClick="onClickDate"
+        android:textColor="@color/icons"
+        android:background="@color/colorAccent"
+        android:layout_alignTop="@+id/taskDateEdit" />
 
     <EditText
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:id="@+id/taskNoteEdit"
         android:layout_below="@+id/textView4"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/radioButton3"
-        android:layout_alignEnd="@+id/radioButton3"
-        android:layout_marginBottom="100dp"/>
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
 

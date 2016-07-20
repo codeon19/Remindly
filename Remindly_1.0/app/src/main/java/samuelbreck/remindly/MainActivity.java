@@ -1,5 +1,6 @@
 package samuelbreck.remindly;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -10,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import org.apache.commons.io.FileUtils;
@@ -85,7 +87,8 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intention = new Intent(MainActivity.this, EditActivity.class);
             intention.putExtra("pos", -1);
-            startActivityForResult(intention,REQUEST_CODE);
+
+            startActivityForResult(intention,REQUEST_CODE, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
 
             return true;
         }
